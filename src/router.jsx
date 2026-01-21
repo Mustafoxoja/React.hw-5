@@ -6,12 +6,14 @@ import About from "./about";
 import Contact from "./contact";
 import Profile from "./profile";
 import NotFound from "./notFound";
+import LoginComp from "./pages/login";
 
 const RouterComp = () => {
   return (
     <>
       <Navbar />
       <Routes>
+        <Route path="/login" element={<LoginComp />} />
         <Route path="/home" element={<Homepage />} />
         <Route path="/product" element={<Product />} />
         <Route path="/about" element={<About />} />
